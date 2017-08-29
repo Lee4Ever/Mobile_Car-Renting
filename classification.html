@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>分类页面</title>
+<link rel="stylesheet" type="text/css" href="css/resetMobile.css">
+<link rel="stylesheet" type="text/css" href="css/common.css">
+</head>
+
+<body>
+<header id="search" class="clearFix">
+	<input type="text"><span>搜索</span><b></b>
+    <ul class="recent">
+    	<li>W20140426dazan0201</li>
+        <li>W20140426dazan0202</li>
+        <li>W20140426dazan0203</li>
+        <li>W20140426dazan0204</li>
+    </ul>
+</header>
+<section id="classification">
+	<div class="sectionOne">
+    	<div class="boxOne box">一级代理商</div>
+        <div class="boxTwos">
+        	<div class="boxTwo box unDrop">全部车辆</div>
+            <div class="boxTwo box drop">自定义分组<span class="add">+</span></div>
+            <ul class="customize">
+            	<li class="box unDrop">我的车<span class="del">+</span></li>
+                <li class="box unDrop">老王的车<span class="del">+</span></li>
+            </ul>
+            <div class="boxTwo box unDrop">收藏列表</div>
+            <div class="boxTwo box unDrop">追踪列表</div>
+            <div class="boxTwo box unDrop">最近浏览</div>
+        </div>
+        <div class="boxOne box">一级代理商</div>
+        <div class="boxTwos">
+        	 <div class="boxTwo box drop">二级代理商A</div>
+             <div class="boxTwos">
+        	 	<div class="boxTwo box drop">老王的车</div>
+        	</div>
+        </div>
+    </div>
+</section>
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/common.js"></script>
+<script>
+	$('.boxOne,.drop').click(function(){
+			$(this).toggleClass('showDown');
+			$(this).next().toggleClass('show');
+		})
+</script>
+</body>
+</html>

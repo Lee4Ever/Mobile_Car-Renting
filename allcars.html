@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>全部车辆</title>
+<link rel="stylesheet" type="text/css" href="css/resetMobile.css">
+<link rel="stylesheet" type="text/css" href="css/common.css">
+</head>
+
+<body style="background:#d9d9d9">
+<header id="titleHeader">
+<span class="selectAll"><input type="checkbox" onclick="allSelect();">全选</span>
+<span class="confirm">确定</span>
+全部车辆
+</header>
+<div class="cover fullPage"></div>
+<section id="allCars">
+	<ul class="carList">
+    	<li>
+        	<input type="checkbox" name="carName">w20140426dazhanK2020
+        </li>
+        <li>
+        	<input type="checkbox" name="carName">w20140426dazhanK2020
+        </li>
+        <li>
+        	<input type="checkbox" name="carName">w20140426dazhanK2020
+        </li>
+        <li>
+        	<input type="checkbox" name="carName">w20140426dazhanK2020
+        </li>
+        <li>
+        	<input type="checkbox" name="carName">w20140426dazhanK2020
+        </li>
+        <li>
+        	<input type="checkbox" name="carName">w20140426dazhanK2020
+        </li>
+    </ul>
+</section>
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/common.js"></script>
+<script>
+	function allSelect() {
+            if ($(":checkbox").attr("checked") != "checked") {
+                $(":checkbox").attr("checked", "checked");
+            }
+            else {
+                $(":checkbox").removeAttr("checked");
+            }
+        }
+</script>
+</body>
+</html>
